@@ -1,0 +1,16 @@
+---
+applications:
+  .:
+    name: eol-api-cron
+    framework:
+      name: standalone
+      info:
+        mem: 64M
+        description: Standalone Application
+        exec: 
+    runtime: ruby193
+    command: ruby cron.rb
+    infra: aws
+    url: 
+    mem: 128M
+    instances: 1
